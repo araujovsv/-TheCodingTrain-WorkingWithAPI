@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
+</head>
+<body>
+
+
+
+    <script>
+        getData();
+        async function getData() {
+            const response = await fetch('ZonAnn.Ts+dSST copy.csv');
+            const data = await response.text()
+            console.log(data)
+            
+            const table = data.split('\n').slice(1)
+            table.forEach(row => {
+                const columns = row.split(',');
+                const temp = columns[]
+
+            })
+        }
+    </script>
+</body>
+</html>
